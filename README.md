@@ -19,7 +19,8 @@ Pour installer AyatWeb, suivez les étapes suivantes :
 
 ## Utilisation
 
-Pour utiliser AyatWeb, lancez le serveur avec la commande suivante : `npm start`
+Pour utiliser AyatWeb, lancez le serveur 
+avec la commande suivante : `npm start`
 
 ## Contribution
 
