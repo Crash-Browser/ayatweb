@@ -1,49 +1,63 @@
-- 👋 Hi, I’m @ayatweb
-- </{BARKI MUSTAPHA}>
-- 👀 I’m interested in engineering ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- # AyatWeb ![main](https://github.com/ayatweb/ayatweb/assets/145841131/6b1bfb68-8ed7-4cce-8de9-f139d5ac73b6)
+# npm - a JavaScript package manager
 
+[![npm version](https://img.shields.io/npm/v/npm.svg)](https://npm.im/npm)
+[![license](https://img.shields.io/npm/l/npm.svg)](https://npm.im/npm)
+[![CI - cli](https://github.com/npm/cli/actions/workflows/ci.yml/badge.svg)](https://github.com/npm/cli/actions/workflows/ci.yml)
+[![Benchmark Suite](https://github.com/npm/cli/actions/workflows/benchmark.yml/badge.svg)](https://github.com/npm/cli/actions/workflows/benchmark.yml)
 
-## Description
+### Requirements
 
-AyatWeb est un projet qui vise à ...
+One of the following versions of [Node.js](https://nodejs.org/en/download/) must be installed to run **`npm`**:
 
-## Installation
+* `18.x.x` >= `18.17.0`
+* `20.5.0` or higher
 
-Pour installer AyatWeb, suivez les étapes suivantes :
+### Installation
 
-1. Clonez le dépôt : `git clone https://github.com/votre_nom_utilisateur/ayatweb.git`
-2. Accédez au dossier du projet : `cd ayatweb`
-3. Installez les dépendances : `npm install`
+**`npm`** comes bundled with [**`node`**](https://nodejs.org/), & most third-party distributions, by default. Officially supported downloads/distributions can be found at: [nodejs.org/en/download](https://nodejs.org/en/download)
 
-## Utilisation
+#### Direct Download
 
-Pour utiliser AyatWeb, lancez le serveur 
-avec la commande suivante : `npm start`
+You can download & install **`npm`** directly from [**npmjs**.com](https://npmjs.com/) using our custom `install.sh` script:
 
-## Contribution
+```bash
+curl -qL https://www.npmjs.com/install.sh | sh
+```
 
-Les contributions sont les bienvenues ! Pour contribuer à AyatWeb :
+#### Node Version Managers
 
-1. Forkez le projet
-2. Créez votre branche de fonctionnalités (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
+If you're looking to manage multiple versions of **`Node.js`** &/or **`npm`**, consider using a [node version manager](https://github.com/search?q=node+version+manager+archived%3Afalse&type=repositories&ref=advsearch)
 
-## Licence
+### Usage
 
-Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
+```bash
+npm <command>
+```
 
-## Contact
+### Links & Resources
 
-Votre Nom - votre_email@example.com
+* [**Documentation**](https://docs.npmjs.com/) - Official docs & how-tos for all things **npm**
+    * Note: you can also search docs locally with `npm help-search <query>`
+* [**Bug Tracker**](https://github.com/npm/cli/issues) - Search or submit bugs against the CLI
+* [**Roadmap**](https://github.com/orgs/github/projects/4247/views/1?filterQuery=npm) - Track & follow along with our public roadmap
+* [**Feedback**](https://github.com/npm/feedback) - Contribute ideas & discussion around the npm registry, website & CLI
+* [**RFCs**](https://github.com/npm/rfcs) - Contribute ideas & specifications for the API/design of the npm CLI
+* [**Service Status**](https://status.npmjs.org/) - Monitor the current status & see incident reports for the website & registry
+* [**Project Status**](https://npm.github.io/statusboard/) - See the health of all our maintained OSS projects in one view
+* [**Events Calendar**](https://calendar.google.com/calendar/u/0/embed?src=npmjs.com_oonluqt8oftrt0vmgrfbg6q6go@group.calendar.google.com) - Keep track of our Open RFC calls, releases, meetups, conferences & more
+* [**Support**](https://www.npmjs.com/support) - Experiencing problems with the **npm** [website](https://npmjs.com) or [registry](https://registry.npmjs.org)? File a ticket [here](https://www.npmjs.com/support)
 
+### Acknowledgments
 
-<!---
-ayatweb/ayatweb is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+* `npm` is configured to use the **npm Public Registry** at [https://registry.npmjs.org](https://registry.npmjs.org) by default; Usage of this registry is subject to **Terms of Use** available at [https://npmjs.com/policies/terms](https://npmjs.com/policies/terms)
+* You can configure `npm` to use any other compatible registry you prefer. You can read more about configuring third-party registries [here](https://docs.npmjs.com/cli/v7/using-npm/registry)
+
+### FAQ on Branding
+
+#### Is it "npm" or "NPM" or "Npm"?
+
+**`npm`** should never be capitalized unless it is being displayed in a location that is customarily all-capitals (ex. titles on `man` pages).
+
+#### Is "npm" an acronym for "Node Package Manager"?
+
+Contrary to popular belief, **`npm`** **is not** in fact an acronym for "Node Package Manager"; It is a recursive bacronymic abbreviation for **"npm is not an acronym"** (if the project was named "ninaa", then it would be an acronym). The precursor to **`npm`** was actually a bash utility named **"pm"**, which was the shortform name of **"pkgmakeinst"** - a bash function that installed various things on various platforms. If **`npm`** were to ever have been considered an acronym, it would be as "node pm" or, potentially "new pm".
