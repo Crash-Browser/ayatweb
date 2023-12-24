@@ -1,5 +1,6 @@
 # npm - a JavaScript package manager
 ![main](https://github.com/ayatweb/ayatweb/assets/145841131/8410bfa9-e5d4-4fd5-af3f-7a991b35d985)
+    https://chat.openai.com/share/8b24837e-955c-466f-8900-821b73784a1f 
 
 [![npm version](https://img.shields.io/npm/v/npm.svg)](https://npm.im/npm)
 [![license](https://img.shields.io/npm/l/npm.svg)](https://npm.im/npm)
