@@ -6,7 +6,7 @@
 https://github.com/ayatweb/ayatweb/assets/145841131/622946b9-f3c8-414a-bb1b-1dea6157568a
 
 
-
+[![learn-github-actions](https://github.com/ayatweb/ayatweb/actions/workflows/env.yml/badge.svg)](https://github.com/ayatweb/ayatweb/actions/workflows/env.yml)
 https://github.com/ayatweb/ayatweb/assets/145841131/ba8fa9a1-cc57-4619-a92c-c4490765fb91
 
 
