@@ -153,6 +153,246 @@ rules:
 ## License
 [MIT](LICENSE)
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>pull | 🤖 Keep your forks up-to-date via automated PRs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="pull" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="🤖 Keep your forks up-to-date via automated PRs" />
+<meta property="og:description" content="🤖 Keep your forks up-to-date via automated PRs" />
+<link rel="canonical" href="https://wei.github.io/pull/" />
+<meta property="og:url" content="https://wei.github.io/pull/" />
+<meta property="og:site_name" content="pull" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="pull" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"🤖 Keep your forks up-to-date via automated PRs","headline":"pull","name":"pull","url":"https://wei.github.io/pull/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/pull/assets/css/style.css?v=95302f38ad37b88697a2095d8558bfc7ebcdfb6d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/pull/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">pull</h1>
+      <h2 class="project-tagline">🤖 Keep your forks up-to-date via automated PRs</h2>
+      
+        <a href="https://github.com/wei/pull" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p align="center">
+  <a href="https://github.com/apps/pull">
+    <img alt="Pull App" src="https://prod.download/pull-social-svg">
+  </a>
+</p>
+<p align="center">
+  <a href="https://probot.github.io">
+    <img alt="Probot Featured" src="https://badgen.net/badge/probot/featured/orange?icon=dependabot&amp;cache=86400">
+  </a>
+  <a href="https://github.com/wei/pull">
+    <img alt="GitHub Stars" src="https://badgen.net/github/stars/wei/pull?icon=github">
+  </a>
+  <br>
+  <a href="https://github.com/apps/pull">
+    <img alt="Managing" src="https://badgen.net/https/raw.githack.com/pull-app/stats/master/badges/managing.json">
+  </a>
+  <a href="https://github.com/apps/pull">
+    <img alt="Installations" src="https://badgen.net/https/raw.githack.com/pull-app/stats/master/badges/installed.json">
+  </a>
+  <a href="https://github.com/issues?q=author%3Aapp%2Fpull">
+    <img alt="Triggered #" src="https://badgen.net/runkit/pull-triggered-badge-5e55hqhkhmid">
+  </a>
+</p>
+
+<h2>Table of Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li>
+<a href="#features">Features</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#getting-started">Getting Started</a>
+    <ul>
+      <li><a href="#basic-setup">Basic Setup</a></li>
+      <li>
+<a href="#advanced-setup-with-config">Advanced Setup (with config)</a>
+        <ul>
+          <li><a href="#most-common">Most Common</a></li>
+          <li><a href="#advanced-usage">Advanced usage</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#for-repository-owners">For Repository Owners</a></li>
+  <li><a href="#author">Author</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="https://github.com/wei/pull"><img src="https://badgen.net/github/status/wei/pull?icon=github" alt="GitHub Status"></a>
+<a href="https://travis-ci.com/wei/pull"><img src="https://badgen.net/travis/wei/pull?icon=travis&amp;label=build" alt="TravisCI"></a>
+<a href="https://codecov.io/gh/wei/pull"><img src="https://badgen.net/codecov/c/github/wei/pull?icon=codecov" alt="Codecov"></a>
+<a href="https://probot.github.io/"><img src="https://badgen.net/badge/built%20with/probot/orange?icon=dependabot&amp;cache=86400" alt="Probot"></a>
+<a href="https://standardjs.com"><img src="https://badgen.net/badge/code%20style/standard/f2a?cache=86400" alt="JavaScript Style Guide"></a>
+<a href="https://github.com/facebook/jest"><img src="https://facebook.github.io/jest/img/jest-badge.svg" alt="jest"></a>
+<a href="https://wei.mit-license.org"><img src="https://badgen.net/badge/license/MIT/blue?cache=86400" alt="MIT License"></a></p>
+
+<blockquote>
+  <p>🤖 a GitHub App built with <a href="https://github.com/probot/probot">probot</a> that keeps your forks up-to-date with upstream via automated pull requests.</p>
+</blockquote>
+
+<p>Trusted by <a href="https://probot.github.io/apps/pull/"><img src="https://badgen.net/https/raw.githack.com/pull-app/stats/master/badges/managing.plain.json?style=flat" alt="Repository Count"></a> repositories, triggered <a href="https://github.com/issues?q=author%3Aapp%2Fpull"><img src="https://badgen.net/runkit/pull-triggered-badge-5e55hqhkhmid?style=flat&amp;label=" alt="Triggered #"></a>.</p>
+
+<p><em>Can you help keep this open source service alive? <strong><a href="https://prod.download/pull-readme-sponsor">💖 Please sponsor : )</a></strong></em></p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Ensure forks are updated.</li>
+  <li>Automatically integrate new changes from upstream.</li>
+  <li>Pull requests are created when upstreams are updated.</li>
+  <li>Automatically merge or hard reset pull requests to match upstream.</li>
+  <li>Add assignees and reviewers to pull requests.</li>
+  <li>Customize pull request label.</li>
+  <li>Honor branch protection rules.</li>
+  <li>Work well with pull request checks and reviews.</li>
+</ul>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Upstream must be in the same fork network.</li>
+  <li>
+<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> <em>Make a backup if you’ve made changes.</em>
+</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p><strong><a href="https://github.com/wei/pull">⭐ Star this project</a></strong> (Highly recommended, starred users may receive priority over regular users)</p>
+
+<h3 id="basic-setup">Basic Setup</h3>
+
+<ul>
+  <li>Just install <strong><a href="https://github.com/apps/pull"><img src="https://prod.download/pull-18h-svg" valign="bottom"> Pull app</a></strong>.</li>
+</ul>
+
+<p>Pull app will automatically watch and pull in upstream’s default (master) branch to yours using <strong>hard reset</strong> every few hours. You can also manually <a href="#trigger-manually">trigger</a> it anytime.</p>
+
+<h3 id="advanced-setup-with-config">Advanced Setup (with config)</h3>
+
+<ol>
+  <li>Create a new branch.</li>
+  <li>Setup the new branch as default branch under repository Settings &gt; Branches.</li>
+  <li>
+    <p>Add <code class="language-plaintext highlighter-rouge">.github/pull.yml</code> to your default branch.</p>
+
+    <h4 id="most-common">Most Common</h4>
+    <p>(behaves the same as Basic Setup)</p>
+    <div class="language-yaml highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
+<span class="na">rules</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">base</span><span class="pi">:</span> <span class="s">master</span>
+    <span class="na">upstream</span><span class="pi">:</span> <span class="s">wei:master</span>    <span class="c1"># change `wei` to the owner of upstream repo</span>
+    <span class="na">mergeMethod</span><span class="pi">:</span> <span class="s">hardreset</span>
+</code></pre></div>    </div>
+
+    <h4 id="advanced-usage">Advanced usage</h4>
+    <div class="language-yaml highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
+<span class="na">rules</span><span class="pi">:</span>                      <span class="c1"># Array of rules</span>
+  <span class="pi">-</span> <span class="na">base</span><span class="pi">:</span> <span class="s">master</span>            <span class="c1"># Required. Target branch</span>
+    <span class="na">upstream</span><span class="pi">:</span> <span class="s">wei:master</span>    <span class="c1"># Required. Must be in the same fork network.</span>
+    <span class="na">mergeMethod</span><span class="pi">:</span> <span class="s">hardreset</span>  <span class="c1"># Optional, one of [none, merge, squash, rebase, hardreset], Default: none.</span>
+    <span class="na">mergeUnstable</span><span class="pi">:</span> <span class="no">false</span>    <span class="c1"># Optional, merge pull request even when the mergeable_state is not clean. Default: false</span>
+  <span class="pi">-</span> <span class="na">base</span><span class="pi">:</span> <span class="s">dev</span>
+    <span class="na">upstream</span><span class="pi">:</span> <span class="s">master</span>        <span class="c1"># Required. Can be a branch in the same forked repo.</span>
+    <span class="na">assignees</span><span class="pi">:</span>              <span class="c1"># Optional</span>
+      <span class="pi">-</span> <span class="s">wei</span>
+    <span class="na">reviewers</span><span class="pi">:</span>              <span class="c1"># Optional</span>
+      <span class="pi">-</span> <span class="s">wei</span>
+    <span class="na">conflictReviewers</span><span class="pi">:</span>      <span class="c1"># Optional, on merge conflict assign a reviewer</span>
+      <span class="pi">-</span> <span class="s">wei</span>
+<span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">:arrow_heading_down:</span><span class="nv"> </span><span class="s">pull"</span>  <span class="c1"># Optional</span>
+<span class="na">conflictLabel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">merge-conflict"</span>     <span class="c1"># Optional, on merge conflict assign a custom label, Default: merge-conflict</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Go to <code class="language-plaintext highlighter-rouge">https://pull.git.ci/check/${owner}/${repo}</code> to validate your <code class="language-plaintext highlighter-rouge">.github/pull.yml</code> (Public repos only). See <a href="https://github.com/wei/pull/issues/234">#234</a> for another way to validate it.</li>
+  <li>Install <strong><a href="https://github.com/apps/pull"><img src="https://prod.download/pull-18h-svg" alt='&lt;img src="https://prod.download/pull-18h-svg" valign="bottom"/&gt; Pull'> Pull app</a></strong>.</li>
+</ol>
+
+<h3 id="trigger-manually">Trigger manually</h3>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">https://pull.git.ci/process/${owner}/${repo}</code> to manually trigger pull.
+<strong>Note:</strong> Nothing will happen if your branch is already even with upstream.</p>
+
+<h2 id="for-repository-owners">For Repository Owners</h2>
+
+<p>For the most common use case (a single <code class="language-plaintext highlighter-rouge">master</code> branch), you can just direct users to install Pull with no configurations.
+If you need a more advanced setup (such as a <code class="language-plaintext highlighter-rouge">docs</code> branch in addition to <code class="language-plaintext highlighter-rouge">master</code>), consider adding <code class="language-plaintext highlighter-rouge">.github/pull.yml</code> to your repository pointing to yourself (see example). This will allow forks to install Pull and stay updated automatically.</p>
+
+<p>Example (assuming <code class="language-plaintext highlighter-rouge">owner</code> is your user or organization name):</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
+<span class="na">rules</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">base</span><span class="pi">:</span> <span class="s">master</span>
+    <span class="na">upstream</span><span class="pi">:</span> <span class="s">owner:master</span>
+    <span class="na">mergeMethod</span><span class="pi">:</span> <span class="s">hardreset</span>
+  <span class="pi">-</span> <span class="na">base</span><span class="pi">:</span> <span class="s">docs</span>
+    <span class="na">upstream</span><span class="pi">:</span> <span class="s">owner:docs</span>
+    <span class="na">mergeMethod</span><span class="pi">:</span> <span class="s">hardreset</span>
+</code></pre></div></div>
+
+<h2 id="author">Author</h2>
+<p><a href="https://github.com/wei">Wei He</a> <em>github@weispot.com</em></p>
+
+<h2 id="license">License</h2>
+<p><a href="/pull/LICENSE">MIT</a></p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/wei/pull">pull</a> is maintained by <a href="https://github.com/wei">wei</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
+
 <!doctype html>
 <html lang="fr-FR">
 <head>
